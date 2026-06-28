@@ -1,0 +1,4 @@
+Shell Commands:
+1. chmod 755 filePath
+2. chown $USER filePath
+3. usermod -aG docker $USER && newgrp docker  

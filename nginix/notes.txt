@@ -1,0 +1,13 @@
+Nginx:
+Common Features:
+1. Load Balancing:
+                 Which user requir can move to which server.
+2. http cache
+                 Cache user fetch data so it can refetch fast and easily
+3. Reverce Proxy:
+                 Can handle multiple user through multiple server by using some principal like ( Round Robin ) e.t.c
+
+
+Install nginix:
+docker ps ( To see all list of docker container that is running )
+docker run -it -p 8080:80 ubuntu

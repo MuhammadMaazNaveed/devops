@@ -1,0 +1,42 @@
+Monolith: All kind of operation can be handle in one repo. like login, signup, onboarding
+Microservice: Everything should be a service like login, signup, onboarding evrything should be in seperate service.
+
+Kubernetes Architecture:
+
+1. Master Node: ( Head Quater ) ( Control-Plane )
+       It has many service that will control or perform any task to worker node. Like a Headquater
+          a. Api Server: ( Team Lead )
+              It's a communication way to connect for clusters, schechuler and controller management to do assign any task or perform any opperations.
+              Can Handle both master node and worker node.
+
+          b. Schedular: ( HR )
+              Handle to create/schedule pods and container inside worker node by connected with api server.
+
+          c. etcd:
+             Is kind of database that stored the created container state, running state and many more.
+
+	d. Controller Manager: ( Project Manager )
+		control that is cluster is running perfactly. is it faced any error or anything.
+
+2. Worker Node:
+   It is main part where docker and cluster is running.
+	a.Kubelet:
+		Manage container and pods that is this working perfectly or not if not then it connect with api gateway to pass the knowledge to it's services.
+
+	b. service proxy:
+		to connect and use the pods and container by the user.
+
+Note: 
+1. Woker/Master nodes  can connect and comunicate through Container Network Interface ( CNI ) Network .
+2. Kubectl or Kube Controller is used to instruct the kubernatives to "what to do" or "what's going on".
+
+
+Styles to run kubernetes:
+1. KubeAdm:
+    Can run multiple instance and grouped them into a cluster.
+2. MiniKube ( local / Single EC2 )
+3. KIND Cluster:
+         kubernetes in docker. ( KIND )
+         Can run on docker.
+4. EKS/AKS/GKE Elastic/Azure Kubernetive server:
+         Managed Kubernetive server means you cann't handle kubernetive by your own cloud can handle this.

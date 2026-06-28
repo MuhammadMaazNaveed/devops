@@ -1,0 +1,9 @@
+1. Shell scripting ( Done )
+2. Teraforms
+3. kubernatives ( In Progress ) ( 2 Weeks ) ( Deadline ) Minimum ( 1 hour p/d )
+4. EC2
+5. S3 ( Done )
+6. Route 53 ( Done )
+7. Cloudfront ( Done )
+8. Lambda function ( Done )
+9. Api GateWay

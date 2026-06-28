@@ -1,0 +1,3 @@
+kubectl cluster-info --context kube-testone
+kubectl get nodes
+kubectl config use-context ( context name )
