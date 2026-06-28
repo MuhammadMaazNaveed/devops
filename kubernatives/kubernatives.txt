@@ -40,3 +40,17 @@ Styles to run kubernetes:
          Can run on docker.
 4. EKS/AKS/GKE Elastic/Azure Kubernetive server:
          Managed Kubernetive server means you cann't handle kubernetive by your own cloud can handle this.
+
+
+Flow Items or Resources
+ Namespace
+ Nginx ( Docker Container ) > POD > Deployment > Service > user
+ Nginx ( Docker Container ) > POD > Deployment > Service > user
+
+
+Understood:
+1. namespace
+2. pods 
+3. deployment
+4. scale
+5. rolling updates

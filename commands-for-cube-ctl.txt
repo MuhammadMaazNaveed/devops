@@ -1,3 +1,10 @@
 kubectl cluster-info --context kube-testone
 kubectl get nodes
 kubectl config use-context ( context name )
+kind create cluster --name=testone --config=kind-config.yml
+kubectl get namespace or kubectl get ns   ( Getting namespace ) 
+kubectl get pods -n ( namespaceName )
+kubectl apply -f ( anything deployment.yml, namespace.yml, pods.yml )
+kubectl describe <podname> -n <namespaceName> 
+kuectl exec -it <podname> -n <namespaceName> -- <terminalName like bash>
+kubectl scale <deploymentName> -n <namespaceName> --replicas=<number>
